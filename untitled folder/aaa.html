@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h2 style="font-size:40px;color:blue;font-family: Times New Roman;">This is a Heading</h2>
+<p>This is a paragraph.</p>
+First name: <input type="text" id="list" name="content" value="hi">
+<br>
+<button value="submit" onclick="getVal()">
+<p id="abc"></p>
+
+
+</body>
+</html>
+
+<script>
+function getVal(){
+	var hello = document.getElementById("list").value;
+    //var hello = 'hello';
+    document.getElementById('abc').innerHTML = hello;
+}
+</script>
